@@ -1,0 +1,34 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+.active_tap{
+    color: rgb(7, 97, 7);    
+}
+.active_tap::after{
+    content: '';
+    position: absolute;
+    display: flex;
+    width: 130%;
+    height: 0.1cm;
+    background-color: rgb(7, 97, 7);
+    display: flex;
+    align-self: flex-end;
+}
+
+.lg-devies-menu a div{
+    content: '';
+    position: absolute;
+    display: flex;
+    width: 0%;
+    height: 0.1cm;
+    background-color: rgb(7, 97, 7);
+    display: flex;
+    align-self: flex-end;
+}
+
+.lg-devies-menu a:hover div{
+    width: 130%;
+}
