@@ -32,3 +32,42 @@
 .lg-devies-menu a:hover div{
     width: 130%;
 }
+
+.hamburger {
+    cursor: pointer;
+    width: 1cm;
+    height: 1cm;
+    position: relative;
+}
+
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+    position: absolute;
+    width: 1cm;
+    height: .3rem;
+    top: 0px;
+    left: 0px;
+    background-color: #000;
+    border-radius: 2rem;
+}
+
+.hamburger-middle{
+   transform: translateY(0.33cm);
+}
+
+.hamburger-bottom{
+    transform: translateY(0.66cm);
+ }
+
+.open .hamburger-middle{
+    display: none;
+}
+
+.open .hamburger-top {
+    transform: translateY(0.5cm) rotateZ(45deg);
+}
+.open .hamburger-bottom{
+    transform: translateY(0.5cm) rotateZ(-45deg);
+}
