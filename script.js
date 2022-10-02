@@ -5,3 +5,5 @@ menuToggler.addEventListener('click',()=>{
     menuToggler.classList.toggle("open")
     menu.classList.toggle("hidden")
 })
+
+
