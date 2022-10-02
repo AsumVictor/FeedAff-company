@@ -2,12 +2,79 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <title>Feed Africa Farm</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/logo.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="tailwind.js"></script>
   <script src="config.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1 class="text-3xl font-bold underline text-clifford">
-    Hello world!
-  </h1>
+     <main>
+        <header>
+            <!-- BAnner -->
+            <div class="banner bg-darkGreen w-full flex items-center text-white font-bold justify-center md:hidden" style="height:1cm;">
+                    <a href="tel:+233591029100"> <i class="fa fa-phone"></i> Call now for Enquiries</a>
+            </div>
+
+            <nav class=" mx-auto">
+                <div class=" sm:p-4 w-full nav flex text-dark items-center justify-around font-bold md:justify-between border-b-2" style="height:2cm;">
+                   <!-- logo -->
+                 <div class="p-2 flex h-full flex-row text-darkGreen font-bold text-2xl overflow-hidden items-center" style="width:5cm;">
+                     <img src="images/logo.jpg" alt="Our Logo" srcset="images/logo.jpg" 
+                          class="w-2/12 h-2/12">
+                     <span> FEED </span><span class="text-orange-400"> AFF</span>
+                 </div>
+                 
+                 <!--Large Device menu LInks-->
+                 <div class="lg-devies-menu hidden md:flex space-x-6 flex-row items-center">
+                    <a href="#" class="relative flex justify-center items-center hover:text-darkGreen home active_tap"> <div></div> Home</a>
+                    <a href="#" class="relative flex justify-center items-center hover:text-darkGreen Services"> <div></div> Services</a>
+                    <a href="#" class="relative flex justify-center items-center hover:text-darkGreen Shop"> <div></div>  Shop</a>
+                    <a href="#" class="relative flex justify-center items-center hover:text-darkGreen About"> <div></div> About</a>
+                    <a href="#" class="relative flex justify-center items-center hover:text-darkGreen Contact"> <div></div> Contact</a>
+                    <a href="#" class="relative flex justify-center items-center hover:text-darkGreen Support"> <div></div> SupportUs</a>
+                    
+                 </div>
+                 <button class="hidden p-3 px-6 rounded-full baseline 
+                 md:block font-bold">
+                   <i class="fa fa-phone"></i> <a href="tel:+233591029100" class="text-darkGreen">+233591029100</a>
+                </button>
+                
+                 <!--Menu Toggler-->
+                  <button id="menu-toggler" class="block hamburger md:hidden focus:outline-none">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                  </button>
+                </div>  
+
+                  <!-- Mobile Menu -->
+                <div class="md:hidden mob_nav">
+                  <div id="menu" class="mob_menu hidden flex absolute flex-col items-center
+                  font-bold sm:w-auto left-6 right-6 py-3">
+                  <a href="#" class="relative mt-2 flex justify-center items-center hover:text-darkGreen home active_tap">
+                     <div></div> Home</a>
+                    <a href="#" class="relative mt-2 flex justify-center items-center hover:text-darkGreen Services">
+                         <div></div> Services</a>
+                    <a href="#" class="relative mt-2 flex justify-center items-center hover:text-darkGreen Shop">
+                         <div></div>  Shop</a>
+                    <a href="#" class="relative mt-2 flex justify-center items-center hover:text-darkGreen About">
+                         <div></div> About</a>
+                    <a href="#" class="relative mt-2 flex justify-center items-center hover:text-darkGreen Contact">
+                         <div></div> Contact</a>
+                    <a href="#" class="relative mt-2 flex justify-center items-center hover:text-darkGreen Support">
+                         <div></div> SupportUs</a>
+                  </div>
+                </div>
+                
+                </nav>
+            </header>
+
+
+
+     </main>
+
+     <script src="script.js"></script>
 </body>
