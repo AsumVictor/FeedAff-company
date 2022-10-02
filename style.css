@@ -18,7 +18,7 @@
     align-self: flex-end;
 }
 
-.lg-devies-menu a div{
+.lg-devies-menu a div,.mob_menu a div{
     content: '';
     position: absolute;
     display: flex;
@@ -29,7 +29,7 @@
     align-self: flex-end;
 }
 
-.lg-devies-menu a:hover div{
+.lg-devies-menu a:hover div,.mob_menu a:hover div{
     width: 130%;
 }
 
@@ -70,4 +70,8 @@
 }
 .open .hamburger-bottom{
     transform: translateY(0.5cm) rotateZ(-45deg);
+}
+
+.mob_menu{
+    box-shadow: 2px 4px 6px rgb(207, 207, 207);
 }
