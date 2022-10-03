@@ -5,6 +5,11 @@
   <title>Feed Africa Farm</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="images/logo.jpg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="tailwind.js"></script>
   <script src="config.js"></script>
@@ -53,7 +58,7 @@
                   <!-- Mobile Menu -->
                 <div class="md:hidden mob_nav">
                   <div id="menu" class="mob_menu hidden flex absolute flex-col items-center
-                  font-bold sm:w-auto left-6 right-6 py-3">
+                  font-bold sm:w-auto left-6 right-6 py-3 bg-white">
                   <a href="#" class="relative mt-2 flex justify-center items-center hover:text-darkGreen home active_tap">
                      <div></div> Home</a>
                     <a href="#" class="relative mt-2 flex justify-center items-center hover:text-darkGreen Services">
@@ -70,11 +75,42 @@
                 </div>
                 
                 </nav>
-            </header>
-
-
-
+          </header>
+ 
+        <section>
+          <div id="carouselExampleSlidesOnly" class="carousel slide relative" data-bs-ride="carousel">
+               <div class="carousel-inner relative w-full overflow-hidden" >
+                 <div class="carousel-item active relative float-left w-full" >
+                   <div class="carousel-content flex flex-col justify-center items-center self-center" style="height:100%;">
+                     <h1 class="text-3xl md:text-5xl font-bold text-white underline text-center"> Welcome To Feed Africa Farm</h1>
+                     <p class="text-center p-6 md:w-6/12 text-white font-bold"> farming system established in West Africa 
+                         Ghana purposely to produce healthy organic plants and animals products at affordable price.</p>
+                     <button class="bg-orange-400 p-4 rounded-md text-dark font-bold " disabled> Explore more</button>
+                   </div>
+                 </div>
+                 <div class="carousel-item relative float-left w-full">
+                   <div class="carousel-content flex flex-col justify-center items-center self-center" style="height:100%;">
+                    <h2 class="text-3xl md:text-5xl font-bold text-white underline text-center"> A.I vertical farm </h2>
+                    <p class="text-center p-6 md:w-6/12 text-white font-bold">AiAsum Vegatable Farm in the next future will 
+                         supply High Quality, Healthy and affordable vegetable. It is based on organic fertilizers. </p>
+                    <button class="bg-orange-400 p-4 rounded-md text-dark font-bold " disabled> Comming Soon</button>
+                   </div>
+                 </div>
+                 <div class="carousel-item relative float-left w-full">
+                  <div class="carousel-content flex flex-col justify-center items-center self-center" style="height:100%;" >
+                    <div class="carousel-content flex flex-col justify-center items-center self-center" style="height:100%;">
+                         <h2 class="text-3xl md:text-5xl font-bold text-white underline text-center"> fetile and Unfertile Eggs</h2>
+                         <p class="text-center p-3 md:p-6 md:w-6/12 text-white font-bold">
+                             We sell and deliver both fertile and Unfertile eggs at affordable price. Free delivery for people inside Tachiman </p>
+                         <button class="bg-orange-400 p-4 rounded-md text-dark font-bold " disabled> Get more</button>
+                        </div>
+                  </div>
+                 </div>
+               </div>
+             </div>
+        </section>
      </main>
 
      <script src="script.js"></script>
+
 </body>

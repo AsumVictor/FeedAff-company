@@ -3,6 +3,28 @@
     box-sizing: border-box;
     transition: .3s;
 }
+*::-webkit-scrollbar {
+    width: 0;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: none;
+  }
+  
+  * {
+    -ms-overflow-style: none;
+  }
+
+header{
+    z-index: 99;
+  }
+
+
 
 .active_tap{
     color: rgb(7, 97, 7);    
@@ -74,4 +96,32 @@
 
 .mob_menu{
     box-shadow: 2px 4px 6px rgb(207, 207, 207);
+    z-index: 10;
 }
+
+.carousel{
+    height: 8cm;
+}
+.carousel-inner{
+    height: 100%;
+}
+
+.carousel-item{
+    height: 100%;
+    background-image: url('images/poultryfarm.jpg') , linear-gradient(rgb(18, 85, 5),rgb(17, 31, 19),rgb(3, 31, 8));
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.carousel-item:nth-child(2){
+    background-image: url('images/Hydro_System.png') , linear-gradient(rgb(18, 85, 5),rgb(17, 31, 19),rgb(3, 31, 8));
+}
+carousel-item:nth-child(3){
+    background-image: url('images/Chick-hatched-in-incubator-.jpg') , linear-gradient(rgb(18, 85, 5),rgb(17, 31, 19),rgb(3, 31, 8));
+}
+@media only screen and (min-width: 760px) {
+    .carousel{
+        height: 13cm;
+    }
+  }
