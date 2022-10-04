@@ -79,7 +79,7 @@ window.addEventListener('load',()=>{
         </div>
          <h2 class="-mt-5 text-2xl font-bold text-center">${homeService.title}</h2>
          <p class="mt-4 text-center p-2">${homeService.shortDescription}</p>
-         <button class="bg-orange-400 p-2 mt-3 rounded-md text-dark font-bold " disabled> Buy now</button>
+         <a href='#shop' class="bg-orange-400 p-2 mt-3 rounded-md text-dark font-bold "> Buy now &#8594;</a>
 
     </div>
       `
