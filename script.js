@@ -15,16 +15,22 @@ const serviceArea = document.querySelector(".servicesArea");
         bigImage: 'images/turkey.jpg',
         circleImg: 'images/Turkeybird.webp',
         title: 'Turkeys',
-        shortDescription: ` We sell Turkeys all types -You can get matured turkeys, poults
+        shortDescription: ` We sell all types Turkeys -You can get matured turkeys, poults
                            male and females at affordable prices. `
      },
      {
-     bigImage: 'images/turkey.jpg',
-        circleImg: 'images/Turkeybird.webp',
-        title: 'Turkeys',
-        shortDescription: ` We sell Fowls all types both
+     bigImage: 'images/DomesticFowl.jpg',
+        circleImg: 'images/Roosters-Hens-and-Chicks.jpg',
+        title: 'Domestic Fowls',
+        shortDescription: ` We sell all types Domestic Fowls  both
                            male and females at affordable prices. All our produce are free from virus`
-     }
+     },
+    {
+        bigImage: 'images/broiler-chicken.jpg',
+        circleImg: 'images/broiler.jpg',
+        title: 'Commercial Broilers',
+        shortDescription: ` Come for your Commercial broilers at affordable price`
+    }
  ]
 
 menuToggler.addEventListener('click',()=>{
@@ -43,7 +49,7 @@ window.addEventListener('load',()=>{
          class="w-full h-full absolute">
     </div>
     <div class="serviceContent flex flex-col justify-center items-center">
-         <div class="circle bg-red-500 bg-red-500 rounded-full border-4 overflow-hidden
+         <div class="circle bg-white text-black rounded-full border-4 overflow-hidden
                     flex items-center justify-center" style="height:2.1cm;width:2.1cm;">
           <img src="${homeService.circleImg}" alt="${homeService.title} image" class="h-full w-full absolute">
         </div>

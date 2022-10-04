@@ -3,22 +3,6 @@
     box-sizing: border-box;
     transition: .3s;
 }
-*::-webkit-scrollbar {
-    width: 0;
-  }
-  
-  *::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  
-  *::-webkit-scrollbar-thumb {
-    background: transparent;
-    border: none;
-  }
-  
-  * {
-    -ms-overflow-style: none;
-  }
 
 header{
     z-index: 99;
