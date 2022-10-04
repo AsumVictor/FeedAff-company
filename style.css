@@ -95,7 +95,6 @@ header{
 }
 
 .mob_menu{
-    box-shadow: 2px 4px 6px rgb(207, 207, 207);
     z-index: 10;
 }
 
@@ -120,6 +119,7 @@ header{
 .carousel-item:nth-child(3){
     background-image: url('images/Chick-hatched-in-incubator.jpg') , linear-gradient(rgb(18, 85, 5),rgb(17, 31, 19),rgb(3, 31, 8));
 }
+
 @media only screen and (min-width: 760px) {
     .carousel{
         height: 13cm;
