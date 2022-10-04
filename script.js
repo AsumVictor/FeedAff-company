@@ -30,6 +30,30 @@ const serviceArea = document.querySelector(".servicesArea");
         circleImg: 'images/broiler.jpg',
         title: 'Commercial Broilers',
         shortDescription: ` Come for your Commercial broilers at affordable price`
+    },
+    {
+        bigImage: 'images/duck.jpg',
+        circleImg: 'images/broiler.jpg',
+        title: 'Ducks',
+        shortDescription: ` Come for your Commercial broilers at affordable price`
+    },
+    {
+        bigImage: 'images/guinea.jpeg',
+        circleImg: 'images/broiler.jpg',
+        title: 'Guinea Fowls',
+        shortDescription: ` Come for your Commercial broilers at affordable price`
+    },
+    {
+        bigImage: 'images/guinea.jpeg',
+        circleImg: 'images/broiler.jpg',
+        title: 'Eggs',
+        shortDescription: ` Come for your Commercial broilers at affordable price`
+    },
+    {
+        bigImage: 'images/guinea.jpeg',
+        circleImg: 'images/broiler.jpg',
+        title: ' Other Animals',
+        shortDescription: ` Come for your Commercial broilers at affordable price`
     }
  ]
 
