@@ -133,7 +133,7 @@ header{
     transition: .3s;
  } 
 .serContainer{
-    height:12cm;
+    height:13cm;
     width:7cm
 }
 .serContainer:hover .circle::after{

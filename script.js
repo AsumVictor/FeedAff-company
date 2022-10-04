@@ -8,7 +8,7 @@ const serviceArea = document.querySelector(".servicesArea");
         bigImage: 'images/Hydro_System.png',
         circleImg: 'images/logo.jpg',
         title: 'Fresh Vegetables',
-        shortDescription: `We produce healthy, fresh and organic vegatbles. we sell carrot, Cabbage,  
+        shortDescription: `We produce healthy and organic vegatbles -carrot, Cabbage,  
                             lettuce, tomatoes, onion and ginger `
      },
      {
@@ -23,7 +23,7 @@ const serviceArea = document.querySelector(".servicesArea");
         circleImg: 'images/Roosters-Hens-and-Chicks.jpg',
         title: 'Domestic Fowls',
         shortDescription: ` We sell all types Domestic Fowls  both
-                           male and females at affordable prices. All our produce are free from virus`
+                           male and females at affordable prices.`
      },
     {
         bigImage: 'images/broiler-chicken.jpg',
@@ -33,27 +33,27 @@ const serviceArea = document.querySelector(".servicesArea");
     },
     {
         bigImage: 'images/duck.jpg',
-        circleImg: 'images/broiler.jpg',
+        circleImg: 'images/silverhillduck.jpg',
         title: 'Ducks',
         shortDescription: ` Come for your Commercial broilers at affordable price`
     },
     {
         bigImage: 'images/guinea.jpeg',
-        circleImg: 'images/broiler.jpg',
+        circleImg: 'images/guineas.jpg',
         title: 'Guinea Fowls',
         shortDescription: ` Come for your Commercial broilers at affordable price`
     },
     {
-        bigImage: 'images/guinea.jpeg',
-        circleImg: 'images/broiler.jpg',
+        bigImage: 'images/eggs.jpg',
+        circleImg: 'images/eggs.webp',
         title: 'Eggs',
-        shortDescription: ` Come for your Commercial broilers at affordable price`
+        shortDescription: ` We sell both fertile and unfertile eggs at lower prices`
     },
     {
-        bigImage: 'images/guinea.jpeg',
-        circleImg: 'images/broiler.jpg',
+        bigImage: 'images/Herd-goats-field.webp',
+        circleImg: 'images/pig.jpg',
         title: ' Other Animals',
-        shortDescription: ` Come for your Commercial broilers at affordable price`
+        shortDescription: `We rear some animals such as pigs, goats, sheeps and grasscutter `
     }
  ]
 
@@ -79,6 +79,7 @@ window.addEventListener('load',()=>{
         </div>
          <h2 class="-mt-5 text-2xl font-bold text-center">${homeService.title}</h2>
          <p class="mt-4 text-center p-2">${homeService.shortDescription}</p>
+         <button class="bg-orange-400 p-2 mt-3 rounded-md text-dark font-bold " disabled> Buy now</button>
 
     </div>
       `
