@@ -95,7 +95,7 @@ header{
 }
 
 .mob_menu{
-    z-index: 10;
+        z-index: 10;
 }
 
 .carousel{
@@ -118,6 +118,36 @@ header{
 }
 .carousel-item:nth-child(3){
     background-image: url('images/Chick-hatched-in-incubator.jpg') , linear-gradient(rgb(18, 85, 5),rgb(17, 31, 19),rgb(3, 31, 8));
+}
+
+.img-div::after{
+   content: "";
+   height: 100%;
+   width: 0%;
+   z-index: 1;
+   background-color: rgba(44, 151, 29, 0.726);
+   transition: .3s;
+
+}
+.img-div::before{
+    content: "";
+    position: absolute;
+    height: .1cm;
+    width: 0%;
+    z-index: 2;
+    background-color: rgb(255, 255, 0);
+    bottom: 0px;
+    transition: .3s;
+
+ }
+.serContainer:hover .img-div::after,.serContainer:hover .img-div::before{
+    width: 100%;
+}
+
+.circle{
+    transform: translateY(-1cm);
+    z-index: 3;
+    border-color: yellow;
 }
 
 @media only screen and (min-width: 760px) {
