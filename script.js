@@ -5,7 +5,7 @@ const serviceArea = document.querySelector(".servicesArea");
 //Arrays of Home page Services
  homeServices = [
      {
-        bigImage: 'images/Hydro_System.png',
+        bigImage: 'images/vegetables.webp',
         circleImg: 'images/logo.jpg',
         title: 'Fresh Vegetables',
         shortDescription: `We produce healthy and organic vegatbles -carrot, Cabbage,  
