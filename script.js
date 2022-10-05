@@ -1,9 +1,9 @@
 const menuToggler = document.querySelector(".hamburger");
 const menu = document.querySelector("#menu");
 const serviceArea = document.querySelector(".servicesArea");
-
+const home_shop = document.querySelector(".hshopCont");
 //Arrays of Home page Services
- homeServices = [
+ const homeServices = [
      {
         bigImage: 'images/vegetables.webp',
         circleImg: 'images/logo.jpg',
@@ -56,6 +56,27 @@ const serviceArea = document.querySelector(".servicesArea");
         shortDescription: `We rear some animals such as pigs, goats, sheeps and grasscutter `
     }
  ]
+ const homeShops = [
+    {
+       bigImage: 'images/guinea.jpeg',
+       ProductName: 'Guinea fowl (Old)',
+       currentProce: 25,
+       deleted_price: 32
+    },
+    {
+        bigImage: 'images/broiler.jpg',
+        ProductName: 'Day old local chicks',
+        currentProce: 5,
+        deleted_price: 7
+    },
+    {
+        bigImage: 'images/vegetables.webp',
+        ProductName: 'Chicks (Month Old)',
+        currentProce: 20,
+        deleted_price: 15
+    }
+  
+]
 
 menuToggler.addEventListener('click',()=>{
     menuToggler.classList.toggle("open")
@@ -79,7 +100,7 @@ window.addEventListener('load',()=>{
         </div>
          <h2 class="-mt-5 text-2xl font-bold text-center">${homeService.title}</h2>
          <p class="mt-4 text-center p-2">${homeService.shortDescription}</p>
-         <a href='#shop' class="bg-orange-400 p-2 mt-3 rounded-md text-dark font-bold "> Buy now &#8594;</a>
+         <a href='#shop' class="bg-orange-400 p-2 mt-3 rounded-md text-dark font-bold "> Contact Us&#8594;</a>
 
     </div>
       `
@@ -88,8 +109,29 @@ window.addEventListener('load',()=>{
       serContainer.setAttribute('class','serContainer overflow-hidden rounded-md bg-darkGreen text-white font-bold relative mt-14')
       serContainer.innerHTML = serContent;
       serviceArea.appendChild(serContainer)
+      });
 
+      homeShops.forEach(homeShop => {
+        let shopwrapper;
+        const HsContent = `
+        <img src="${homeShop.bigImage}" 
+        alt="${homeShop.bigImage}"
+        style="width:100%;height:50%;"
+        class="rounded-xl">
+    <h4 class="text-center mt-5 uppercase font-bold text-white">${homeShop.ProductName}</h4>
+    <div class="flex flex-row justify-between space-x-2 items-center">
+         <p class="p-3 text-white font-bold " >GHC ${homeShop.currentProce}.00</p>
+         <p class="p-3 font-bold"><del>GHC ${homeShop.deleted_price}.00</del></p>
+    </div>
+    <div class="p-3 bg-orange-400 font-bold text-center text-dark m-3 cursor-pointer rounded-xl" >
+        Buy Now
+    </div>
+      `
 
+      shopwrapper = document.createElement('div')
+      shopwrapper.setAttribute('class','shopwrapper bg-darkGreen rounded-xl mt-10')
+      shopwrapper.innerHTML = HsContent;
+      home_shop.appendChild(shopwrapper)
 
       });
       
