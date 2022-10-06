@@ -64,16 +64,16 @@ const home_shop = document.querySelector(".hshopCont");
        deleted_price: 32
     },
     {
-        bigImage: 'images/broiler.jpg',
+        bigImage: 'images/chick.jpeg',
         ProductName: 'Day old local chicks',
         currentProce: 5,
         deleted_price: 7
     },
     {
-        bigImage: 'images/vegetables.webp',
-        ProductName: 'Chicks (Month Old)',
-        currentProce: 20,
-        deleted_price: 15
+        bigImage: 'images/kuroiler3W.jpeg',
+        ProductName: 'Kuroilers (3 Weeks Old)',
+        currentProce: 13,
+        deleted_price: 17
     }
   
 ]
@@ -129,7 +129,7 @@ window.addEventListener('load',()=>{
       `
 
       shopwrapper = document.createElement('div')
-      shopwrapper.setAttribute('class','shopwrapper bg-darkGreen rounded-xl mt-10')
+      shopwrapper.setAttribute('class','shopwrapper bg-darkGreen rounded-xl mt-10 ml-6')
       shopwrapper.innerHTML = HsContent;
       home_shop.appendChild(shopwrapper)
 
