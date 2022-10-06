@@ -61,19 +61,17 @@ const home_shop = document.querySelector(".hshopCont");
        bigImage: 'images/guinea.jpeg',
        ProductName: 'Guinea fowl (Old)',
        currentProce: 25,
-       deleted_price: 32
-    },
+           },
     {
         bigImage: 'images/chick.jpeg',
         ProductName: 'Day old local chicks',
         currentProce: 5,
-        deleted_price: 7
     },
     {
         bigImage: 'images/kuroiler3W.jpeg',
         ProductName: 'Kuroilers (3 Weeks Old)',
         currentProce: 13,
-        deleted_price: 17
+
     }
   
 ]
@@ -121,10 +119,11 @@ window.addEventListener('load',()=>{
     <h4 class="text-center mt-5 uppercase font-bold text-white">${homeShop.ProductName}</h4>
     <div class="flex flex-row justify-between space-x-2 items-center">
          <p class="p-3 text-white font-bold " >GHC ${homeShop.currentProce}.00</p>
-         <p class="p-3 font-bold"><del>GHC ${homeShop.deleted_price}.00</del></p>
+         <p class="p-3 font-bold text-yellow-300">&#9733;&#9733;&#9733;&#9733;&#9733;</del></p>
     </div>
-    <div class="p-3 bg-orange-400 font-bold text-center text-dark m-3 cursor-pointer rounded-xl" >
-        Buy Now
+    <div class="p-3 bg-orange-400 font-bold text-center text-dark hover:bg-orange-200 m-3 cursor-pointer rounded-xl flex flex-row items-center justify-center" >
+    <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z" fill="#FFF"/></svg>
+    <span class= 'mx-3'>Buy Now</span>
     </div>
       `
 
