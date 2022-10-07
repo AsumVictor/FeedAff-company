@@ -159,6 +159,34 @@ header{
     width: 6.5cm;
 }
 
+.agric{
+    background-image: url('images/video-one-bg.jpg');
+    background-position: 0%;
+    background-attachment: fixed;
+    background-origin: content-box;
+}
+
+.wave{
+    height: 2cm;
+    width: 2cm;
+    transform: scale(0.1);
+    animation: expan 3s infinite;
+    border: 2px solid ;
+    border-color: rgb(251,146,60);
+}
+.wave:nth-child(2){
+    animation-delay: 1s;
+}
+.wave:nth-child(3){
+    animation-delay: 2s;
+}
+.wave:nth-child(4){
+    animation-delay: 3s;
+}
+@keyframes expan {
+    0%{transform: scale(0.1);border-color: rgb(251,146,60);}
+    100%{transform: scale(6);border-color:rgba(251, 146, 60, 0.199);}
+}
 @media only screen and (min-width: 760px) {
     .carousel{
         height: 13cm;
