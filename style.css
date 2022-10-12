@@ -202,6 +202,17 @@ header{
         width: 6cm;
         border-color: transparent}
 }
+.inputDiv{
+    border-color: rgb(180, 230, 180);
+}
+
+.inputDiv.focus{
+    border-color: green;
+}
+.inputDiv.focus span{
+    transform: translateY(-.77cm);
+    background-color: white;
+}
 @media only screen and (min-width: 760px) {
     .carousel{
         height: 13cm;
