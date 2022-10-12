@@ -34,9 +34,9 @@
                  
                  <!--Large Device menu LInks-->
                  <div class="lg-devies-menu hidden md:flex space-x-6 flex-row items-center">
-                    <a href="index.html" class="relative flex justify-center items-center hover:text-darkGreen home active_tap"> <div></div> Home</a>
+                    <a href="index.html" class="relative flex justify-center items-center hover:text-darkGreen home "> <div></div> Home</a>
                     <a href="#" class="relative flex justify-center items-center hover:text-darkGreen Services"> <div></div> Services</a>
-                    <a href="shop.html" class="relative flex justify-center items-center hover:text-darkGreen Shop"> <div></div>  Shop</a>
+                    <a href="shop.html" class="relative flex justify-center items-center hover:text-darkGreen Shop active_tap"> <div></div>  Shop</a>
                     <a href="#" class="relative flex justify-center items-center hover:text-darkGreen About"> <div></div> About</a>
                     <a href="#" class="relative flex justify-center items-center hover:text-darkGreen Contact"> <div></div> Contact</a>
                     <a href="#" class="relative flex justify-center items-center hover:text-darkGreen Support"> <div></div> SupportUs</a>
@@ -59,11 +59,11 @@
                 <div class="md:hidden mob_nav">
                   <div id="menu" class="mob_menu hidden flex absolute flex-col items-center
                   font-bold sm:w-auto left-6 right-6 py-3 bg-white text-2xl ">
-                  <a href="index.html" class="relative mt-2 flex justify-center items-center hover:text-darkGreen home active_tap">
+                  <a href="index.html" class="relative mt-2 flex justify-center items-center hover:text-darkGreen home ">
                      <div></div> Home</a>
                     <a href="#" class="relative mt-2 flex justify-center items-center hover:text-darkGreen Services">
                          <div></div> Services</a>
-                    <a href="shop.html" class="relative mt-2 flex justify-center items-center hover:text-darkGreen Shop">
+                    <a href="shop.html" class="relative mt-2 flex justify-center items-center hover:text-darkGreen Shop active_tap">
                          <div></div>  Shop</a>
                     <a href="#" class="relative mt-2 flex justify-center items-center hover:text-darkGreen About">
                          <div></div> About</a>
@@ -78,37 +78,40 @@
           </header>
  
         <section id="carousel">
-          <div id="carouselExampleSlidesOnly" class="carousel slide relative" data-bs-ride="carousel">
-               <div class="carousel-inner relative w-full overflow-hidden" >
-                 <div class="carousel-item active relative float-left w-full" >
-                   <div class="carousel-content flex flex-col justify-center items-center self-center" style="height:100%;">
-                     <h1 class="text-3xl md:text-5xl font-bold text-white underline text-center"> Welcome To Feed Africa Farm</h1>
-                     <p class="text-center p-6 md:w-6/12 text-white font-bold"> farming system established in West Africa 
-                         Ghana purposely to produce healthy organic plants and animals products at affordable price.</p>
-                     <button class="bg-orange-400 p-4 rounded-md text-dark font-bold " disabled> Explore more</button>
-                   </div>
-                 </div>
-                 <div class="carousel-item relative float-left w-full">
-                   <div class="carousel-content flex flex-col justify-center items-center self-center" style="height:100%;">
-                    <h2 class="text-3xl md:text-5xl font-bold text-white underline text-center"> A.I vertical farm </h2>
-                    <p class="text-center p-6 md:w-6/12 text-white font-bold">AiAsum Vegatable Farm in the next future will 
-                         supply High Quality, Healthy and affordable vegetable. It is based on organic fertilizers. </p>
-                    <button class="bg-orange-400 p-4 rounded-md text-dark font-bold " disabled> Comming Soon</button>
-                   </div>
-                 </div>
-                 <div class="carousel-item relative float-left w-full">
-                  <div class="carousel-content flex flex-col justify-center items-center self-center" style="height:100%;" >
-                    <div class="carousel-content flex flex-col justify-center items-center self-center" style="height:100%;">
-                         <h2 class="text-3xl md:text-5xl font-bold text-white underline text-center"> fetile and Unfertile Eggs</h2>
-                         <p class="text-center p-3 md:p-6 md:w-6/12 text-white font-bold">
-                             We sell and deliver both fertile and Unfertile eggs at affordable price. Free delivery for people inside Tachiman </p>
-                         <button class="bg-orange-400 p-4 rounded-md text-dark font-bold " disabled> Get more</button>
-                        </div>
-                  </div>
-                 </div>
+          <div class="relative w-full">
+               <div class="w-full flex flex-col justify-center items-center" 
+                    style="height:8cm;background-image: url('images/video-one-bg.jpg'),linear-gradient(rgb(151, 151, 151),rgb(131, 131, 131),rgb(187, 187, 187));
+                           background-position:100%;background-blend-mode: multiply;">
+                 <h1 class="text-4xl font-bold text-white">Shop</h1>
+                 <p class="text-white font-bold">Order all your products</p>
                </div>
              </div>
         </section>
+
+   <section id="shop">
+        <div class="shop w-full flex flex-col md:flex-row mt-10">
+            <div class="searchAndFilter flex flex-col items-center" style="height:8cm;width:8.5cm;">
+                <form action="" id="search" class="w-full">
+                    <div class="searchDiv flex-row w-full bg-darkGreen relative rounded-2xl justify-end"  style="height:1.4cm;">
+                          <input type="search" name="searchItem" id="searchItem"
+                                  class="w-9/12 h-full outline-none bg-transparent px-2" style="z-index:2;" required>
+                          <input type="submit" value="Search" class="h-full bg-darkGreen px-3 rounded-md ">
+                          <span class="absolute capitalize font-bold px-3 pt-2 ml-4"
+                          style="top:0px;left:0px;z-index:1;">Search item</span> 
+                    </div> 
+                  </form>
+                  <h3 class="font-bold text-2xl">Categories</h3>
+              <div class="flex flex-col items-center">
+                 <div class="flex flex-row items-center space-x-4 p-3 cursor-pointer hover:bg-darkGreen hover:text-white font-bold"> 
+                    <p> Animal products </p><i class="fa fa-caret-right"></i> </div>
+
+              </div>  
+            </div>
+            <div class="itemsArea bg-darkGreen">
+                
+            </div>
+        </div>
+   </section>
 
    
        <footer>
@@ -128,7 +131,7 @@
                       <div></div>Our Services</a>
                  <a href="#" class="relative mt-2 flex justify-center items-center hover:text-orange-400 Shop">
                       <div></div> Shop</a>
-                 <a href="#" class="relative mt-2 flex justify-center items-center hover:text-orange-400 About">
+                 <a href="shop.html" class="relative mt-2 flex justify-center items-center hover:text-orange-400 About">
                       <div></div> About us</a>
                  <a href="#" class="relative mt-2 flex justify-center items-center hover:text-orange-400 Contact">
                       <div></div> New projects</a>
