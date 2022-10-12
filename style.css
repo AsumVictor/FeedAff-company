@@ -214,7 +214,7 @@ header{
     background-color: white;
 }
 .Sub_inputDiv.focus{
-    border-color: rgb(245, 173, 39);
+    border-color: rgb(255, 166, 0);
 }
 .Sub_inputDiv.focus span{
     transform: translateY(-.77cm);

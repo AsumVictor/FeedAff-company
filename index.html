@@ -303,13 +303,13 @@
                <div class="flex flex-col items-center">
                  <h4 class="font-bold text-2xl flex flex-row"><img src="images/logo.jpg" alt="Logo" srcset="images/logo.jpg" style="height:.8cm;width:.8cm;">
                   FEED<span class="text-orange-400">AFF</span></h4>
-                  <p>Buy all your Agriculture products from us. We deliver Quality and affordable products</p>
+                  <p class="">Buy all your Agriculture products from us. <br> We deliver Quality and affordable products</p>
                   <i class="mt-2 font-bold fa fa-envelope"><a href="mailto:teslajnr86@gmail.com"> teslajnr86@gmail.com</a></i>
                   <i class="mt-2 font-bold fa fa-phone"><a href="tel:+233591029100">  +233591029100</a></i>
                   <i class="mt-2 font-bold fa fa-moon"><a href=""> Techiman Location</a></i>
                </div>
                
-              <div class="flex flex-col  items-center">
+              <div class="flex flex-col  items-center mt-10 md:mt-0">
                 <h4 class="font-bold text-2xl text-orange-400">Explore</h4>
                  <a href="#" class="relative mt-2 flex justify-center items-center hover:text-orange-400 Services">
                       <div></div>Our Services</a>
@@ -322,16 +322,28 @@
                  <a href="#" class="relative mt-2 flex justify-center items-center hover:text-orange-400 Support">
                       <div></div> Careers</a>
               </div>
-              <div class="flex flex-col items-center">
-                <h4 class="font-bold text-2xl text-orange-400 ">News Letter</h4>
-                 <p class="text-center">Subscribe to our news letter for daily updates</p>
-                 <div class="Sub_inputDiv mt-4 border-4 rounded-2xl p-2 px-5 flex items-center relative w-full md:w-10/12">           
-                  <span class="p-1 font-bold text-lightDarkBlue">Message Subject</span>
-                  <input id="subject" name="subject" type="text" 
-                         class="input font-bold text-lightDarkBlue w-full h-full absolute bg-transparent outline-none px-1 md:px-5" required>
-              </div>
+
+              <div class="flex flex-col  items-center mt-10 md:mt-0">
+                <h4 class="font-bold text-2xl text-orange-400">News and Updates</h4>
+                  No recent updates
               </div>
 
+              <div class="flex flex-col items-center mt-10 md:mt-0">
+                <h4 class="font-bold text-2xl text-orange-400 ">News Letter</h4>
+                 <p class="text-center">Subscribe to our news letter for daily updates</p>
+                 <form action="" class="w-full flex flex-col items-center">
+                 <div class="Sub_inputDiv border-orange-200 mt-4 border-4 rounded-2xl p-2 px-5 flex items-center relative w-full md:w-10/12">           
+                  <span class="p-1 font-bold text-lightDarkBlue">Your Email</span>
+                  <input id="email_sub" name="sub_email" type="email" 
+                         class="input font-bold text-lightDarkBlue w-full h-full absolute bg-transparent outline-none px-1 md:px-5" required>
+              </div>
+              <input type="submit" value="Subscribe" class="mt-4 text-center self-center bg-orange-400 px-10 py-2 font-bold rounded-md">
+            </form>
+              </div>
+
+           </div>
+           <div class="flex pb-2 items-center justify-center font-bold bg-orange-400 text-white">
+             @copy Right 2022 FeedAff
            </div>
        </footer>
      </main>
