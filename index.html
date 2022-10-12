@@ -246,11 +246,23 @@
                 <div class="w-full md:w-5/12 flex items-center flex-col justify-center p-3 md:p-0 mt-6  md:mt-0">
                    <h3 class="uppercase font-bold text-darkGreen">dont't hesitate to contact us</h3>
                       <form action="" method="post" class="w-full flex flex-col items-center justify-center">
-                        <div class="inputDiv mt-4 border-4 rounded-2xl p-2 px-5 flex items-center relative w-full md:10/12">           
+                        <div class="inputDiv mt-4 border-4 rounded-2xl p-2 px-5 flex items-center relative w-full md:w-10/12">           
                           <span class="p-1 font-bold text-lightDarkBlue">Your Email</span>
                           <input id="email" name="email" type="email" 
                                  class="input font-bold text-lightDarkBlue w-full h-full absolute bg-transparent outline-none px-1 md:px-5" required>
-                          </div>
+                        </div>
+                        <div class="inputDiv mt-4 border-4 rounded-2xl p-2 px-5 flex items-center relative w-full md:w-10/12">           
+                            <span class="p-1 font-bold text-lightDarkBlue">Message Subject</span>
+                            <input id="subject" name="subject" type="text"
+                                   class="input font-bold text-lightDarkBlue w-full h-full absolute bg-transparent outline-none px-1 md:px-5" required>
+                        </div>
+                        <div class="inputDiv p-2 mt-6 border-4 rounded-2xl flex items-start justify-center relative w-full md:w-10/12" 
+                              style="height:5cm;">           
+                          <span class="p-1 font-bold text-lightDarkBlue">Message body</span>
+                          <textarea name="msg" id="" class="w-full absolute bg-transparent h-full outline-none px-5 pt-3" required></textarea> 
+                      </div>
+                      <input type="submit" value="Send Message" id="submit"
+                            class="p-3 text-center bg-darkGreen rounded-2xl text-white font-bold cursor-pointer mt-4 hover:bg-green-600">
                       </form>
                 </div>
 
@@ -286,6 +298,42 @@
           </div>     
        </section>
 
+       <footer>
+           <div class="w-full flex flex-col md:flex-row justify-around bg-darkGreen text-white font-bold pt-4 pb-5 p-4">
+               <div class="flex flex-col items-center">
+                 <h4 class="font-bold text-2xl flex flex-row"><img src="images/logo.jpg" alt="Logo" srcset="images/logo.jpg" style="height:.8cm;width:.8cm;">
+                  FEED<span class="text-orange-400">AFF</span></h4>
+                  <p>Buy all your Agriculture products from us. We deliver Quality and affordable products</p>
+                  <i class="mt-2 font-bold fa fa-envelope"><a href="mailto:teslajnr86@gmail.com"> teslajnr86@gmail.com</a></i>
+                  <i class="mt-2 font-bold fa fa-phone"><a href="tel:+233591029100">  +233591029100</a></i>
+                  <i class="mt-2 font-bold fa fa-moon"><a href=""> Techiman Location</a></i>
+               </div>
+               
+              <div class="flex flex-col  items-center">
+                <h4 class="font-bold text-2xl text-orange-400">Explore</h4>
+                 <a href="#" class="relative mt-2 flex justify-center items-center hover:text-orange-400 Services">
+                      <div></div>Our Services</a>
+                 <a href="#" class="relative mt-2 flex justify-center items-center hover:text-orange-400 Shop">
+                      <div></div> Shop</a>
+                 <a href="#" class="relative mt-2 flex justify-center items-center hover:text-orange-400 About">
+                      <div></div> About us</a>
+                 <a href="#" class="relative mt-2 flex justify-center items-center hover:text-orange-400 Contact">
+                      <div></div> New projects</a>
+                 <a href="#" class="relative mt-2 flex justify-center items-center hover:text-orange-400 Support">
+                      <div></div> Careers</a>
+              </div>
+              <div class="flex flex-col items-center">
+                <h4 class="font-bold text-2xl text-orange-400 ">News Letter</h4>
+                 <p class="text-center">Subscribe to our news letter for daily updates</p>
+                 <div class="Sub_inputDiv mt-4 border-4 rounded-2xl p-2 px-5 flex items-center relative w-full md:w-10/12">           
+                  <span class="p-1 font-bold text-lightDarkBlue">Message Subject</span>
+                  <input id="subject" name="subject" type="text" 
+                         class="input font-bold text-lightDarkBlue w-full h-full absolute bg-transparent outline-none px-1 md:px-5" required>
+              </div>
+              </div>
+
+           </div>
+       </footer>
      </main>
 
      <script src="script.js"></script>

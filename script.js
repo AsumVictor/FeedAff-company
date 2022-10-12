@@ -3,7 +3,7 @@ const menu = document.querySelector("#menu");
 const serviceArea = document.querySelector(".servicesArea");
 const home_shop = document.querySelector(".hshopCont");
 const form = document.querySelector('form');
-const inputs = document.querySelectorAll(".input");
+const inputs = document.querySelectorAll(".input,textarea");
 //Arrays of Home page Services
  const homeServices = [
      {
@@ -153,4 +153,11 @@ function When_to_type(){
     inputs.forEach(input => {
         input.addEventListener("focus", When_to_type);
         input.addEventListener("blur", When_not_typing);
+        input.addEventListener("keyup", ()=>{
+            if (inputs[0].validity.valid && inputs[1].value!='' && inputs[2].value!='') {
+                submit.disabled=false;
+            }else{
+                submit.disabled=true;
+            }
+        })
         });
