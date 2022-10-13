@@ -2,6 +2,7 @@ const menuToggler = document.querySelector(".hamburger");
 const menu = document.querySelector("#menu");
 const serviceArea = document.querySelector(".servicesArea");
 const home_shop = document.querySelector(".hshopCont");
+const inputs = document.querySelectorAll(".input,textarea,#searchItem");
 //Arrays of Home page Services
  const homeServices = [
      {
@@ -135,3 +136,24 @@ window.addEventListener('load',()=>{
       });
       
 })
+
+function When_to_type(){
+    let parent = this.parentNode;
+    parent.classList.add("focus");
+    }
+ // when input loses its focus   
+    function When_not_typing(){
+    let parent = this.parentNode;
+    if(this.value == ""){
+    parent.classList.remove("focus");
+    }
+    }
+
+    inputs.forEach(input => {
+        input.addEventListener("focus", When_to_type);
+        input.addEventListener("blur", When_not_typing);
+        });
+
+
+        // SHOP
+

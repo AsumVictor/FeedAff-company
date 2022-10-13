@@ -202,6 +202,36 @@ header{
         width: 6cm;
         border-color: transparent}
 }
+.inputDiv{
+    border-color: rgb(180, 230, 180);
+}
+
+.inputDiv.focus{
+    border-color: green;
+}
+.inputDiv.focus span{
+    transform: translateY(-.77cm);
+    background-color: white;
+}
+.Sub_inputDiv.focus{
+    border-color: rgb(255, 166, 0);
+}
+.Sub_inputDiv.focus span{
+    transform: translateY(-.77cm);
+    background-color: rgb(7, 97, 7);
+}
+
+
+
+/* Shop */
+.searchDiv.focus{
+    border-color: green;
+}
+.searchDiv.focus span{
+    transform: translateY(-.5cm);
+    background-color: rgb(255, 255, 255);
+}
+
 @media only screen and (min-width: 760px) {
     .carousel{
         height: 13cm;
