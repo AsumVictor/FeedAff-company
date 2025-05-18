@@ -8,15 +8,18 @@ export default {
         signika: ['Signika', 'sans-serif'], // 👈 Add this line
       },
       colors: {
-        'FeedAff-green': {
+        'Feed Africa Farms-green': {
           900: '#1a3c1e',
           800: '#224c26',
           700: '#2d5e32',
           600: '#3a713e',
         },
-        'FeedAff-yellow': {
+        'Feed Africa Farms-yellow': {
           400: '#e6c288',
           500: '#ddb76f',
+        },
+        "Feed Africa Farms-black": {
+          700: "#404A3D",
         }
       },
     },

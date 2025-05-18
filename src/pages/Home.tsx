@@ -1,4 +1,5 @@
 import Hero from "../components/Hero";
+import Services from "../components/Services";
 import "../styles/home.css";
 
 export function Home() {
@@ -22,7 +23,8 @@ export function Home() {
           />
         </clipPath>
       </svg>
-      <div className="h-screen bg-red-400"></div>
+      <Services />
+      <div className=" h-screen bg-red-50 w-full"></div>
     </div>
   );
 }

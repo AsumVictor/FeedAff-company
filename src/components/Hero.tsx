@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Navbar from "./Navbar";
 import HeroContent from "./HeroContent";
 import NavDots from "./NavDots";
 import SlideIndicator from "./SlideIndicator";

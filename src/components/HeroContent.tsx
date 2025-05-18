@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import { ExternalIcon } from './icons';
 
 const HeroContent: React.FC = () => {
   return (
@@ -19,13 +20,13 @@ const HeroContent: React.FC = () => {
       </h1>
       
       <p className="text-white/90 text-lg mb-8 max-w-2xl animate-revealSlow">
-        Nourish your body and soul with fresh produce straight from the farm. FeedAff gives you
+        Nourish your body and soul with fresh produce straight from the farm. Feed Africa Farms gives you
         the space to live healthier, naturally.
       </p>
       
       <button className="bg-white hover:bg-yellow-400 transition-all duration-300 hover:px-10 text-[#1a3c1e] font-medium py-3 px-8 rounded-full flex items-center space-x-2 shadow-lg animate-revealSlow">
         <span>Contact Us</span>
-        <ArrowRight className="h-4 w-4 ml-1" />
+        <ExternalIcon />
       </button>
     </div>
   );

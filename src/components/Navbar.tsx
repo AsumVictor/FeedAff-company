@@ -58,15 +58,15 @@ const Navbar: React.FC = () => {
               </div>
             </div>
 
-            <button className="bg-yellow-400 hover:bg-yellow-500 transition-colors text-[#1a3c1e] font-medium py-2 px-4 rounded-full flex items-center space-x-2 translate-x-10">
+            <button className="bg-yellow-400 hover:bg-yellow-500 transition-colors text-[#1a3c1e] font-medium py-2 px-4 rounded-full flex items-center space-x-2 md:translate-x-10">
               <span>Get In Touch</span>
               <ExternalIcon />
             </button>
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="lg:hidden flex items-center">
-            <button onClick={toggleMobileMenu} className="p-2 text-white">
+          <div className="lg:hidden border-4 border-white flex items-center bg-yellow-400 px-2 py-1 rounded-2xl">
+            <button onClick={toggleMobileMenu} className="p-2 text-FeedAff-green-600">
               {isMobileMenuOpen ? (
                 <X className="h-6 w-6" />
               ) : (
