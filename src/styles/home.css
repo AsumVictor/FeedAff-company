@@ -1,0 +1,5 @@
+.hero-bg {
+  margin: 4px;
+  clip-path: url(#heroClip);
+  -webkit-clip-path: url(#heroClip); 
+}

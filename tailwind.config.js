@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        signika: ['Signika', 'sans-serif'], // 👈 Add this line
       },
       colors: {
         'FeedAff-green': {

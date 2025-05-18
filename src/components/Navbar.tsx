@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Menu, Phone, Search, X } from "lucide-react";
+import { Menu, Phone, X } from "lucide-react";
 import Logo from "./Logo";
 import { getNavURL, navItems } from "../constants/nav";
 import { NavLink } from "react-router";
+import { ExternalIcon } from "./icons";
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -27,9 +28,9 @@ const Navbar: React.FC = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 w-full z-[999] transition-all duration-300 ${
         isScrolled
-          ? "bg-white/90 backdrop-blur-md shadow-md py-2"
+          ? "bg-[#1a3c1e] backdrop-blur-md shadow-md py-2"
           : "bg-transparent py-4"
       }`}
     >
@@ -45,8 +46,8 @@ const Navbar: React.FC = () => {
             <NavLinks />
           </div>
 
-          {/* Contact and Search */}
-          <div className="hidden lg:flex items-center space-x-4">
+          {/* Contact */}
+          <div className="hidden lg:flex items-center justify-between space-x-4">
             <div className="flex items-center">
               <div className="w-8 h-8 rounded-full bg-yellow-400 flex items-center justify-center mr-2">
                 <Phone className="h-4 w-4 text-[#1a3c1e]" />
@@ -57,9 +58,9 @@ const Navbar: React.FC = () => {
               </div>
             </div>
 
-            <button className="bg-yellow-400 hover:bg-yellow-500 transition-colors text-[#1a3c1e] font-medium py-2 px-4 rounded-full flex items-center space-x-2">
+            <button className="bg-yellow-400 hover:bg-yellow-500 transition-colors text-[#1a3c1e] font-medium py-2 px-4 rounded-full flex items-center space-x-2 translate-x-10">
               <span>Get In Touch</span>
-              <span className="text-lg">↗</span>
+              <ExternalIcon />
             </button>
           </div>
 

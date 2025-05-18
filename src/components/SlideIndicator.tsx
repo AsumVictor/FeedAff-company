@@ -7,7 +7,7 @@ interface SlideIndicatorProps {
 
 const SlideIndicator: React.FC<SlideIndicatorProps> = ({ current, total }) => {
   return (
-    <div className="fixed bottom-8 left-8 z-20 hidden md:block">
+    <div className=" absolute bottom-8 left-8 hidden md:block">
       <div className="flex items-center space-x-2">
         <span className="text-4xl font-bold text-yellow-400">{current < 10 ? `0${current}` : current}</span>
         <div className="w-12 h-0.5 bg-white/50"></div>
