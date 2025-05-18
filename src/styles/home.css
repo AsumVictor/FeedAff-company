@@ -1,5 +1,10 @@
 .hero-bg {
   margin: 4px;
   clip-path: url(#heroClip);
-  -webkit-clip-path: url(#heroClip); 
+  -webkit-clip-path: url(#heroClip);
+}
+
+.service-overlay {
+  clip-path: url(#serviceClip);
+  -webkit-clip-path: url(#serviceClip);
 }

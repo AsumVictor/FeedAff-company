@@ -5,8 +5,22 @@
 @tailwind utilities;
 
 *{
+
   font-family: "Signika", sans-serif;
 }
+:root {
+  --background: #eddc5e33;
+}
+
+.bg-yellow-primary {
+    background-color: var(--background);
+
+}
+
+body {
+  background-color: var(--background);
+}
+
 .signika-300 {
   font-family: "Signika", sans-serif;
   font-optical-sizing: auto;

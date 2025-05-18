@@ -58,7 +58,7 @@ const Navbar: React.FC = () => {
               </div>
             </div>
 
-            <button className="bg-yellow-400 hover:bg-yellow-500 transition-colors text-[#1a3c1e] font-medium py-2 px-4 rounded-full flex items-center space-x-2 md:translate-x-10">
+            <button className="bg-yellow-400 hover:bg-yellow-500 transition-colors text-[#1a3c1e] font-medium py-2 px-4 rounded-full flex items-center space-x-2">
               <span>Get In Touch</span>
               <ExternalIcon />
             </button>

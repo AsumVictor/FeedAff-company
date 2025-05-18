@@ -20,7 +20,8 @@ export default {
         },
         "Feed Africa Farms-black": {
           700: "#404A3D",
-        }
+        },
+        "background": "var(--background)",
       },
     },
   },
