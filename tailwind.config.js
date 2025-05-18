@@ -7,13 +7,13 @@ export default {
         sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
       colors: {
-        'agrimo-green': {
+        'FeedAff-green': {
           900: '#1a3c1e',
           800: '#224c26',
           700: '#2d5e32',
           600: '#3a713e',
         },
-        'agrimo-yellow': {
+        'FeedAff-yellow': {
           400: '#e6c288',
           500: '#ddb76f',
         }

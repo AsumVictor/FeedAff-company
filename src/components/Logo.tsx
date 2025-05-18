@@ -8,7 +8,8 @@ const Logo: React.FC = () => {
         <Leaf className="h-8 w-8 text-yellow-400 transition-transform group-hover:rotate-12 duration-300" />
       </div>
       <h1 className="text-2xl font-bold text-white">
-        <span className="text-yellow-400">A</span>grimo
+        <span className="text-yellow-400">F</span>eed
+         <span className="text-yellow-400">Aff</span>
       </h1>
     </div>
   );

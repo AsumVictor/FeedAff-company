@@ -1,12 +1,14 @@
-import React from 'react';
-import Hero from './components/Hero';
-import './animations.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Home } from "./pages/index.ts";
+import "./animations.css";
 
 function App() {
   return (
-    <div className="min-h-screen">
-      <Hero />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
   );
 }
 

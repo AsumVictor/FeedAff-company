@@ -19,7 +19,7 @@ const HeroContent: React.FC = () => {
       </h1>
       
       <p className="text-white/90 text-lg mb-8 max-w-2xl animate-revealSlow">
-        Nourish your body and soul with fresh produce straight from the farm. Agrimo gives you
+        Nourish your body and soul with fresh produce straight from the farm. FeedAff gives you
         the space to live healthier, naturally.
       </p>
       
