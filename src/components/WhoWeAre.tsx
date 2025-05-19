@@ -131,7 +131,7 @@ const WhoWeAre: React.FC = () => {
 
             {/* Description */}
             <p className="text-gray-600 mb-12 text-lg">
-              Feed Africa Farmsis a sustainable farming business dedicated to producing
+              Feed Africa Farms is a sustainable farming business dedicated to producing
               fresh vegetables and poultry products for healthy living. We grow
               and deliver nutritious, affordable food directly from our farm to
               consumers across Ghana. Beyond farming, we support local
