@@ -8,3 +8,8 @@
   clip-path: url(#serviceClip);
   -webkit-clip-path: url(#serviceClip);
 }
+
+.top-service-overlay {
+  clip-path: url(#ss);
+  -webkit-clip-path: url(#ss);
+}

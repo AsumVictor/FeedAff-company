@@ -1,5 +1,7 @@
 import Hero from "../components/Hero";
 import Services from "../components/Services";
+import ScrollingText from "../components/TextBarMaque";
+import TopServices from "../components/TopServices";
 import WhoWeAre from "../components/WhoWeAre";
 import "../styles/home.css";
 
@@ -9,7 +11,37 @@ export function Home() {
       <Hero />
       <Services />
       <WhoWeAre />
+      {/* // Scroll text */}
+      <div className=" bg-white">
+        <ScrollingText
+          texts={[
+            "Feed Africa",
+            "Healthy",
+            "Fresh Produce",
+            "Organic Farming",
+            "Sustainable Agriculture",
+            "Local Farmers",
+            "Affordable Food",
+            "Green Fertilizer",
+            "Poultry Products",
+            "Fresh Vegetables",
+            "Food Security",
+            "Pre-Order Vegetables",
+            "Zero Waste Farming",
+            "Natural Fertilizers",
+            "Nutritious Food",
+            "Eco-Friendly",
+            "Support Local",
+            "Circular Economy",
+          ]}
+        />
+      </div>
+
+      {/* // Our top services */}
+      <TopServices />
+
       <div className=" h-screen bg-red-50 w-full"></div>
+
 
       {/* ALL MASK CLIPPATH IN HOME PAGE */}
       <svg width="0" height="0" style={{ position: "absolute" }}>
@@ -38,6 +70,9 @@ export function Home() {
           />
         </clipPath>
       </svg>
+
+
+   
     </div>
   );
 }
