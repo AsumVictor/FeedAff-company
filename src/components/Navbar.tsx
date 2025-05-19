@@ -103,7 +103,7 @@ const Navbar: React.FC = () => {
 
                 <button className="w-full bg-yellow-400 hover:bg-yellow-500 text-[#1a3c1e] font-medium py-2 px-4 rounded-full flex items-center justify-center space-x-2">
                   <span>Get In Touch</span>
-                  <span className="text-lg">↗</span>
+              <ExternalIcon />
                 </button>
               </div>
             </div>
