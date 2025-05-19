@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+
+  font-family: "Signika", sans-serif;
+}
+:root {
+  --background: #eddc5e33;
+}
+
+.bg-yellow-primary {
+    background-color: var(--background);
+
+}
+
+body {
+  background-color: var(--background);
+}
+
+.signika-300 {
+  font-family: "Signika", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "GRAD" 0;
+}
+
+.signika-400 {
+  font-family: "Signika", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "GRAD" 0;
+}
+
+.signika-500 {
+  font-family: "Signika", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "GRAD" 0;
+}
+
+.signika-600 {
+  font-family: "Signika", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "GRAD" 0;
+}
+
+.signika-700 {
+  font-family: "Signika", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "GRAD" 0;
+}
